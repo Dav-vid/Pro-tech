@@ -1,0 +1,46 @@
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: beige;
+    background-color: black;
+    margin: -8px -8px -8px -8px;
+    font-family: monospace;
+}
+.enc1{
+    display: flex;
+}
+.opciones{
+    display: flex;
+}
+.enc2{
+   display: flex;
+   margin: 0 15px 0 0;
+}
+.barradebusqueda{
+  display: flex;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#buscador{
+    width: 350px;
+}
+.qs{
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    font-weight: lighter;
+    color: whitesmoke;
+}
+#text1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: grey;
+    color: azure;
+}
+html{
+    background-color: black;
+}
