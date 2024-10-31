@@ -1,0 +1,80 @@
+.logo{
+    height: 64px;
+    width: 64px;
+}
+.iniciar{
+    padding: 25px;
+    /*margin: 170px 500px;*/
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: rgba(1, 87, 82, 0.479);
+    border-radius: 30px;
+}
+.checkbox{
+    width: 15px;
+}
+input{
+    margin: 10px;
+    padding: 10px;
+    width: 355px;
+    display: flex;
+    justify-content: center;
+}
+label{
+    font-size: 16px;
+}
+.frontal{
+    /*display: flex;
+    justify-content: center;*/
+    /*margin-top: 100px;*/
+}
+.cuadro{
+    padding: 25px;
+    /*border: solid rgb(95, 219, 209);*/
+    border-radius: 25px;
+    width: 500px;
+    height: 500px;
+    /*background-color: #111;
+    border: solid 5px rgb(155, 240, 255);*/
+    /*height: 300px;*/
+    /*width: 300px;*/
+   /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+    background: rgba(0, 0, 0, 0.932);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+    /*box-shadow: 0 0 40px 0 #fff;*/
+}
+h3{
+    color: #fff;
+    font-size: 35px;
+}
+html{
+    /*background-image: url(img/bbn.svg);*/
+    background-color: black;
+}
+body{
+    /*background: linear-gradient(rgba(0, 0, 0, 0.836), #045252d3);
+    height: 680px;*/
+}
+/*.contacto{
+    background-color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100px;
+    width: 1350px;
+    /*margin: 150px 500px -8px 0;
+    color: black;
+    margin: auto;
+}/*
+.iconos{
+    width: 16px;
+    height: 16px;
+}*/

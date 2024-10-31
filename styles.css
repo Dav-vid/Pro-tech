@@ -1,6 +1,5 @@
 .encabezado{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
@@ -13,11 +12,17 @@
 .enc1{
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 .opciones{
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
 }
+/*.opciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}*/
 .enc2{
    display: flex;
    margin: 0 50px 0 0;
@@ -29,27 +34,27 @@
 }
 a{
     text-decoration: none;
-    color: rgb(71, 48, 5);
+    color: rgb(29, 50, 51);
 }
 #buscador{
     width: 350px;
 }
 .qs{
-    font-size: 80px 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80px;
+    font-family: Verdana, Geneva, TahSoma, sans-serif;
     font-style: oblique;
-    color: rgb(255, 212, 131);
+    color: rgb(255, 255, 255);
 }
 #text1{
     display: flex;
     align-items: center;
     flex-direction: column;
    /* background-color: rgb(53, 61, 53);*/
-    color: rgba(245, 222, 179, 0.829);
+    color: rgba(253, 253, 253, 0.829);
     text-align: center;
 }
 html{
-    background-color: black;
+    background: linear-gradient(black, rgb(115, 174, 192));
 }
 .text2{
     display: flex;
@@ -81,18 +86,22 @@ html{
 }
 .beneficios{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+    background-image: url(/img/diseño.jfif);
+    background-size: cover;
+    background-attachment: fixed;
 }
 .bdt{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     margin: 100px 50px  -20px 50px;
+    font-size: 50px;
 }
 .img3{
     width: 350px;
     height: 390px;
+    margin: 15px;
 }
 #img{
     display: flex;
@@ -103,7 +112,7 @@ html{
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 150Spx;
+    height: 100px;
     width: 1350px;
     margin: 50px 0 -8px 0;
     color: black;
@@ -114,4 +123,34 @@ html{
 }
 #cont{
     margin: 0 0 20px 0;
+}
+.be{
+    padding: 50px 20px 50px 20px;
+    background-color: rgba(0, 0, 0, 0.582);
+    border: solid 5px rgb(115, 174, 192);
+    border-radius: 15px;
+    margin-right: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+li{
+    list-style: none;
+    margin-left: 15px;
+}
+.publ{
+    font-size: 32px;
+    margin-top: 15px;
+}
+.h2{
+    font-size: 2em;
+}
+.button{
+    border-radius: 25px;
+    padding: 35px;
+    color: rgb(255, 255, 255);
+    background: rgba(236, 236, 236, 0);
+    cursor: pointer;
+    margin: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
 }
