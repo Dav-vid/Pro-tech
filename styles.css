@@ -5,6 +5,7 @@
     background-color: rgb(255, 255, 255);
     margin: -2px -8px -8px -8px;
     font-family: tahoma;
+    font-weight: bold;
     position: fixed;
     top: 0;
     width: 100%;
@@ -31,6 +32,15 @@
 .barradebusqueda{
   display: flex;
   align-items: center;
+  color: #000;
+}
+input{
+    color: black;
+    background: transparent;
+    border-radius: 15px;
+    margin-left: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
 }
 a{
     text-decoration: none;
@@ -54,7 +64,8 @@ a{
     text-align: center;
 }
 html{
-    background: linear-gradient(black, rgb(115, 174, 192));
+    /*background: linear-gradient(black, rgb(115, 174, 192));*/
+    background-color: #000;
 }
 .text2{
     display: flex;
