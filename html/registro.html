@@ -5,41 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iniciar seccion</title>
-    <link rel="stylesheet" href="/estilos/registro.css">
-    <link rel="icon" href="/img/pro-tech.png">
+    <link rel="stylesheet" href="/estilos/navbar.css">
+    <link rel="icon" href="/img/pro-tech-logo.png">
 </head>
 
 <body>
-    <main>
-        <div class="regresar"><a href="/html/indexx.html">regresar</a></div>
-        <div class="cuadro">
-            <div class="frontal">
-                <h3><!--<img class="logo" src="/img/pro-tech.png" alt=""> -->Iniciar seccion en su cuenta</h3>
-            </div>
-            <div class="iniciar">
-                <form class="init" action="c.text">
-                    <input type="text" required placeholder="Usuario">
-                    <input type="password" required placeholder="contraseña">
-                    <label>
-                        aceptar terminos y condiciones<input class="checkbox" type="checkbox" required>
-                    </label>
-                    <input type="submit" name="iniciar seccion" value="ingresar">
+    <main class="main_registro">
+        <div><a href="indexx.html" class="regresar">regresar</a></div>
+        <div class="content">
+            <div class="formulario inicio--seccion">
+                <form id="inicioSeccion">
+                    <p class="p--reseñas p-registro">Iniciar Seccion</p>
+                    <label for="email" class="label-comentarios label--registro">email</label>
+                    <input type="email" id="Iemail" class="input-comentarios registro">
+                    <label for="contraseña" class="label-comentarios label--registro">Contraseña</label>
+                    <input type="password" id="Icontraseña" class="input-comentarios registro">
+                    <input type="submit" id="enviar--formulario" class="button-adquirir submit-servicios" value="iniciar seccion">
+                    <p class="p--inicioSeccion">si no tienes cuenta, registrate <a  class="a--inicioSeccion" href="/html/registrace.html">aqui</a></p>
                 </form>
             </div>
-            <!--<div class="contacto">
-                <div id="cont">
-                    <h2>Contactanos</h2>
-                    <a href="#"><img class="iconos" src="/img/instagram.png" alt="istagram"></a>
-                    <a href="#"><img class="iconos" src="/img/facebook.png" alt="facebook"></a>
-                    <a href="#"><img class="iconos" src="/img/github.png" alt="github"></a>
-                    <a href="#"><img class="iconos" src="/img/whatsapp.png" alt="whatsapp"></a>
-                </div>
-            </div>-->
-        </div>
-        <div class="registrate">
-            <P>¿no tienes cuenta? <a href="registrace.html">registrate aqui</a></P>
         </div>
     </main>
+    <script src="index.js"></script>
 </body>
 
 </html>

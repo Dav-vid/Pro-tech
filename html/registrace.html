@@ -5,26 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>registrarce</title>
-    <link rel="stylesheet" href="/estilos/registro.css">
-    <link rel="icon" href="/img/pro-tech.png">
+    <link rel="stylesheet" href="/estilos/navbar.css">
+    <link rel="icon" href="img/pro-tech-logo.png">
 </head>
+
 <body>
-    <div class="regresar"> <a href="/html/registro.html">regresar</a></div>
-    <form class="registrar">
-        <fieldset>
-            <legend>Registrate</legend>
-            <label for="nombre"> nombre </label>
-            <input id="nombre" type="text" required>
-            <label for="apellido"> apellido </label>
-            <input id="apellido" type="text" required>
-            <label for="email"> email </label>
-            <input id="email" type="email" required>
-            <label for="contraseña"> contraseña </label>
-            <input id="contraseña" type="password" required>
-            <label for="contraseña2"> rectificar contraseña </label>
-            <input id="contraseña2" type="password" required>
-            <label> aceptar terminos y condiciones <input type="checkbox" required></label>
-            <input type="submit" value="registrarce">
-        </fieldset>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-    </form>
+    <main class="main_registro">
+        <div><a href="indexx.html" class="regresar">regresar</a></div>
+        <div class="content">
+            <div class="formulario">
+                <form id="formularioRegistro">
+                    <p class="p--reseñas p-registro">Registro</p>
+                    <label for="nombre" class="label-comentarios"> Nombre</label>
+                    <input required type="text" id="nombre" class="input-comentarios registro">
+                    <label for="apellido" class="label-comentarios label--registro"> apellido</label>
+                    <input required type="text" id="apellido" class="input-comentarios registro">
+                    <label for="email" class="label-comentarios label--registro">email</label>
+                    <input required type="email" id="email" class="input-comentarios registro">
+                    <label for="contrasena" class="label-comentarios label--registro">Contraseña</label>
+                    <input required type="password" id="contrasena" class="input-comentarios registro">
+                    <label for="genero" class="label-comentarios label--registro">genero</label>
+                    <input required type="text" id="genero" class="input-comentarios registro">
+                    <input type="submit" id="enviar--formulario" class="button-adquirir submit-servicios">
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
 </body>

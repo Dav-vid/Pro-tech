@@ -65,6 +65,9 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
 }
 .servicios-ofrecidos{
     padding: 30px 70px;
@@ -74,6 +77,7 @@ h2{
     background-color: #1c1c1c;
     border-radius: 15px;
     box-sizing: border-box;
+    scroll-snap-align: center;
 }
 .h3__servicios{
     font-size: 3rem;
@@ -98,18 +102,23 @@ h3{
     font-weight: bold;
 }
 .planes{
-    width: 500px;
-    height: 700px;
+    width: 400px;
+    height: 70vh;
     margin: 50px 15px;
-    color: #0d0d0d;
-    background-color: #E0E0E0;
+    color: #e0e0e0;
+    background-color: #1c1c1c;
     padding: 20px 50px;
     border-radius: 20px;
     box-sizing: border-box;
 }
+.contenedor--planes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .h3--planes{
     color: #00CC44 ;
-    background-color: #0d0d0d;
+    background-color: #1c1c1c;
     padding: 20px;
     text-align: center;
     border-radius: 15px;
@@ -117,15 +126,9 @@ h3{
 .text--plan{
     text-align: justify;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-bottom: 20px;
-    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-top: 20px;
     font-weight: bold;
-}
-.li--plan{
-    text-align: justify;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    color: #E0E0E0;
 }
 .button-adquirir{
     background-color: #0d0d0d;
@@ -136,9 +139,13 @@ h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
+.button-adquirir:hover{
+    background-color: #00CC44;
+    color: #1c1c1c;
+    cursor: pointer;
+}
 .planes:hover{
     box-shadow: 0 0 15px 0 #00CC44;
-    color: #0d0d0d;
 }
 #equipo{
     background-color: #1c1c1c;
@@ -195,4 +202,67 @@ h3{
     border: solid 1px #00FF85;
     box-sizing: border-box;
     cursor: pointer;
+}
+/*registro*/
+.main_registro{
+    background-color: #0d0d0d;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    height: 110vh;
+}
+.formulario{
+    margin-top: 40px;
+    margin-left: 0;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #1c1c1c;
+    color: #E0E0E0;
+    width: 50vw;
+    height: 100vh;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+.p-registro{
+    margin-bottom: 15px;
+}
+.registro{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 6vh;
+    margin: 10px 20px; 
+    padding: 5px;
+    box-sizing: border-box;
+}
+.submit-servicios{
+    margin: 15px 140px;
+    width: 25vw;
+    height: 8vh;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+.regresar{
+    box-sizing: border-box;
+    margin: 50px;
+    color: #00CC44;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*iniciar seccion*/
+.inicio--seccion{
+    height: 80vh;
+}
+.p--inicioSeccion{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.a--inicioSeccion{
+    color: #00CC44;
+}
+.formulario:hover{
+    box-shadow: 0 0 15px 0 #00FF85;
 }

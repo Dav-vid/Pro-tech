@@ -1,3 +1,6 @@
+@import "./cuerpo.css";
+@import "./foot.css";
+
 *{
     margin: 0;
     padding: 0;
@@ -24,7 +27,7 @@
     font-size: 20px;
     text-align: center;
     color: #00FF85;
-    padding: 20px 5px;
+    padding: 25px 8px;
 }
 .link__nav:hover{
     background-color: #1A1A1A;
@@ -33,11 +36,19 @@
     background-color: #00FF85;
     color: #0D0D0D;
     padding: 15px 12px;
-    margin-left: 270px;
+    margin-left: 200px;
     border-radius: 15px;
 }
 .iniciar--seccion:hover{
     background-color: transparent;
     color: #00FF85;
     border: solid #00FF85;
+}
+.logo{
+    width: 48px;
+    height: 100%;
+    vertical-align: middle;
+}
+.logo--li{
+    margin:0;
 }
