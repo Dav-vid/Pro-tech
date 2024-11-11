@@ -1,0 +1,59 @@
+@import "./cuerpo.css";
+@import "./foot.css";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+  background-color: #0D0D0D;  
+  position: fixed;
+  width: 100%;
+}
+.navbar{
+    margin: 0;
+    border-bottom: solid #1C1C1C;
+}
+.list{
+    display: inline-block;
+    padding: 20px;
+    box-sizing: border-box;
+  
+}
+.link__nav{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: #00FF85;
+    padding: 25px 8px;
+}
+.link__nav:hover{
+    background-color: #1A1A1A;
+}
+.iniciar--seccion{
+    background-color: #00FF85;
+    color: #0D0D0D;
+    padding: 15px 12px;
+    margin-left: 200px;
+    border-radius: 15px;
+    border: solid 1px;
+}
+.iniciar--seccion:hover{
+    background-color: transparent;
+    color: #00FF85;
+    border: 1px solid #00FF85;
+    cursor: pointer;
+}
+.logo{
+    width: 48px;
+    height: 100%;
+    vertical-align: middle;
+}
+.logo--li{
+    margin:0;
+}
+@media (max-width: 480px){
+    
+}
