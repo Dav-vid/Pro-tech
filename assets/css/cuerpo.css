@@ -3,6 +3,7 @@
     padding: 0;
     background-color: #0d0d0d;
     color: #E0E0E0;
+    width: 100%;
 }
 #inicio{
     display: flex;
@@ -72,8 +73,8 @@ h2{
 .servicios-ofrecidos{
     padding: 30px 70px;
     margin: 15px;
-    width: 500px;
-    height: 500px;
+    width: 45vw;
+    height: 60vh;
     background-color: #1c1c1c;
     border-radius: 15px;
     box-sizing: border-box;
@@ -102,8 +103,8 @@ h3{
     font-weight: bold;
 }
 .planes{
-    width: 400px;
-    height: 70vh;
+    width: 30vw;
+    height: 60vh;
     margin: 50px 15px;
     color: #e0e0e0;
     background-color: #1c1c1c;
@@ -180,16 +181,16 @@ h3{
     color: #E0E0E0;
     font-size: 20px;
     border: solid 1px #E0E0E0;
-    width: 500px;
+    width: 50vw;
 }
 .texto--input{
-    width: 500px;
+    width: 50vw;
     height: 100px;
     margin-bottom: 50px;
 }
 .text--submit{
     text-align: center;
-    width: 560px;
+    width: 65vw;
     margin-bottom: 50px;
     background-color: #00CC44;
     color: #0d0d0d;
@@ -223,7 +224,7 @@ h3{
     justify-content: center;
     background-color: #1c1c1c;
     color: #E0E0E0;
-    width: 50vw;
+    min-width: 10vw;
     height: 100vh;
     box-sizing: border-box;
     border-radius: 15px;
@@ -234,7 +235,8 @@ h3{
 .registro{
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    align-items: center;
+    min-width: 50vw;
     height: 6vh;
     margin: 10px 20px; 
     padding: 5px;
@@ -271,7 +273,7 @@ h3{
     height: 50px;
     background-color: #1c1c1c;
     margin-bottom: 0;
-    padding-top: 100px;
+    padding-top: 110px;
 }
 #bienvenidoUsuario{
     color:#E0E0E0;
@@ -281,4 +283,42 @@ h3{
     justify-content: center;
     align-content: center;
     text-align: center;
+}
+/*lo dificill*/
+@media (max-width: 800px){
+    *{
+       font-size: 12px;
+    }
+    .img{
+        display: none;
+
+    }
+    .servicios-ofrecidos{
+        margin-right: 0;
+        margin: 1px 1px 10px 1px;
+        padding: 10px 15px;
+        width: 90vw;
+        height: 60vh;
+    }
+    .text--servicios{
+        margin: 20px;
+        text-align: justify;
+        padding: 0;
+    }
+    .li--servicios{
+        margin: 20px;
+    }
+    .first-p{
+        text-align: center;
+    }
+    .planes{
+        width: 85vw;
+        height: 60vh;
+    }
+    .banner{
+        height: 80px;
+    }
+    .h2--equipo{
+        text-align: center;
+    }
 }

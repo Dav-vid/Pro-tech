@@ -12,10 +12,10 @@
 <body>
     <header>
         <nav class="nav">
-            <ul class="navbar">
-                <div class="list logo--li">
-                        <img class="logo" src="/img/pro-tech-logo.png">
-                </div>
+            <div class="list logo--li">
+                <a href="#" id="responsive"><img class="logo" src="/img/pro-tech-logo.png"></a>
+            </div>
+            <ul class="navbar" id="barnav">
                 <li class="list">
                     <a class="link__nav" href="indexx.html">pro-tech</a>
                 </li>
@@ -25,17 +25,17 @@
                 <li class="list">
                     <a class="link__nav" href="#contacto">contacto</a>
                 </li>
-                <li class="list">
+                <!--<li class="list">
                     <a class="link__nav" href="equipo">equipo</a>
-                </li>
+                </li>-->
                 <li class="list">
                     <a class="link__nav" href="#servicios">servicios</a>
                 </li>
                 <li class="list">
-                    <a class="link__nav" href="#reseñas">reseñas</a>
+                    <a class="link__nav" href="#reseña">reseñas</a>
                 </li>
                 <lI class="list">
-                   <button class="link__nav iniciar--seccion" id="buttonSesion" >iniciar sesión</button>
+                    <button class="link__nav iniciar--seccion" id="buttonSesion">iniciar sesión</button>
                 </lI>
             </ul>
         </nav>
@@ -54,7 +54,7 @@
         <div id="Nosotros">
             <h2>Nosotros</h2>
             <div class="text-image">
-                <p class="text">somos un equipo ligado a la tecnologia y el diseño, nos enncargamos en hacer realidad
+                <p class="text">somos un equipo ligado a la tecnología y el diseño, nos enncargamos en hacer realidad
                     tus ideas; estamos
                     especializados en el diseño grafico, desarrollo de software adaptado a todos los tamaños, desarrollo
                     web
@@ -145,21 +145,6 @@
                             un plan digital alineado a los objetivos de tu negocio.</li>
                     </ul>
                 </div>
-                <div class="servicios-ofrecidos">
-                    <h3>desarrollo de programas de pc</h3>
-                    <p class="text--servicios">Creamos software a medida para entornos de escritorio, diseñados
-                        específicamente para satisfacer
-                        las necesidades operativas y mejorar la eficiencia de las empresas. Desde sistemas de gestión
-                        hasta herramientas de automatización, desarrollamos soluciones que optimizan tu negocio.</p>
-                    <ul>
-                        <li class="li--servicios">Software de gestión empresarial, herramientas de automatización de
-                            procesos, integración de
-                            bases de datos, desarrollo de interfaces de usuario intuitivas y soporte técnico.</li>
-                        <li class="li--servicios">Beneficios: Ahorro de tiempo y costos, mayor control sobre los
-                            procesos internos y un
-                            sistema personalizado que facilita la gestión y el crecimiento de la empresa.</li>
-                    </ul>
-                </div>
             </div>
             <div class="contenedor--planes">
                 <div class="planes">
@@ -171,8 +156,35 @@
                         soporte básico en desarrollo y diseño. Este plan cubre las necesidades fundamentales para
                         comenzar a
                         destacar en línea.</p>
-                    <button class="button-adquirir">adquirir</button>
+                    <button class="button-adquirir" id="adquirirmodal">adquirir</button>
                 </div>
+                <!--ventana modal-->
+                <div class="contenedor-modal" id="ventana">
+                    <div class="div-modal">
+                        <a class="modalcerrar" id="x">X</a>
+                        <h3 class="h3-modal">¿estas listo para llegar al siguiente nivel?</h3>
+                        <p class="p-modal">este plan basico te ofrese muy buenas alternayivas para comenzar a
+                            desarrollar tus propyectos, contaras con un equipo especializado que estara atento a tus
+                            necesidades y sobre todo de oidos abiertos para hacer tus ideas realidad.</p>
+                        <br>
+                        <ul class="ul-modal">
+                            <li class="li-modal">Desarrollo web estándar: Diseño y programación de sitios web básicos.
+                            </li>
+                            <li class="li-modal">Soporte técnico básico: Atención a consultas técnicas iniciales.</li>
+                            <li class="li-modal">Optimización SEO inicial: Configuración de SEO para visibilidad básica.
+                            </li>
+                            <li class="li-modal">Integración de redes sociales: Conexión de plataformas sociales clave.
+                            </li>
+                            <li class="li-modal">Actualizaciones de seguridad: Protección contra amenazas comunes.</li>
+                            <li class="li-modal">Analítica web simplificada: Informes básicos de tráfico y rendimiento.
+                            </li>
+                        </ul>
+                        <br>
+                        <p class="p-modal">para adquirir este plan escribenos</p>
+                        <a href="https://wa.me/573147505691" class="enlace-modal" target="_blank">aqui</a>
+                    </div>
+                </div>
+                <!--aca acaba mi venatana modal-->
                 <div class="planes">
                     <img src="/img/iconos/paleta.png" alt="imagen del plan intermedio">
                     <h3 class="h3--planes">intermedio</h3>
@@ -182,19 +194,65 @@
                         aplicaciones y soporte continuo. Este plan ofrece más funciones y personalización para ayudarte
                         a
                         crecer de manera consistente.</p>
-                    <button class="button-adquirir">adquirir</button>
+                    <button class="button-adquirir" id="adquirirmodal2">adquirir</button>
                 </div>
+                <!--ventana modal-->
+                <div class="contenedor-modal" id="ventana2">
+                    <div class="div-modal">
+                        <a class="modalcerrar" id="x2">X</a>
+                        <h3 class="h3-modal">¿estas listo para llegar al siguiente nivel?</h3>
+                        <p class="p-modal">
+                            este plan intermedio te ofrece mas a fondo funciones que te haran destacar, y hacer de tus ideas un rotundo exito, contaras con un seguimiento mas intensivo para brindarte un aun mucho mejor servicio.
+                        </p>
+                        <br>
+                        <ul class="ul-modal">
+                                <li class="li-modal">Desarrollo de sitio web de hasta 10 páginas</li>
+                                <li class="li-modal">Optimización básica para motores de búsqueda (SEO)</li>
+                                <li class="li-modal">Diseño gráfico personalizado y branding</li>
+                                <li class="li-modal">Integración de redes sociales</li>
+                                <li class="li-modal">Soporte técnico durante 3 meses</li>
+                                <li class="li-modal">Funcionalidad básica de comercio electrónico</li>
+                        </ul>
+                        <br>
+                        <p class="p-modal">para adquirir este plan escribenos</p>
+                        <a href="https://wa.me/573147505691" class="enlace-modal" target="_blank">aqui</a>
+                    </div>
+                </div>
+                <!--aca acaba mi venatana modal-->
                 <div class="planes">
                     <img src="/img/iconos/remolino-de-pluma.png" alt="imagen del plan avanzado">
                     <h3 class="h3--planes">premiun</h3>
                     <p class="text--plan">La solución más completa de Pro-Tech, ideal para empresas que buscan una
                         presencia
                         digital de alto
-                        nivel y servicios personalizados, aqui podras encontrar todo lo necesario para hacer tu ideas realidad.</p>
-                    <button class="button-adquirir">adquirir</button>
+                        nivel y servicios personalizados, aqui podras encontrar todo lo necesario para hacer tu ideas
+                        realidad.</p>
+                    <button class="button-adquirir" id="adquirirmodal3">adquirir</button>
                 </div>
+                <!--ventana modal-->
+                <div class="contenedor-modal" id="ventana3">
+                    <div class="div-modal">
+                        <a class="modalcerrar" id="x3">X</a>
+                        <h3 class="h3-modal">¿estas listo para llegar al siguiente nivel?</h3>
+                        <p class="p-modal">la solucion mas completa que encontraras, te ayudaremos a crecer como nunca antes, con un seguimiento completo y creaciones fascinantes ilimitadas, tendras a el mejor equipo a tu disposicion, no lo dudes esta es tu oportunidad de hacer tus ideas realidad.</p>
+                        <br>
+                        <ul class="ul-modal">
+                                <li class="li-modal">Desarrollo de sitio web sin límite de páginas</li>
+                                <li class="li-modal">SEO avanzado y análisis de rendimiento</li>
+                                <li class="li-modal">Diseño gráfico avanzado y soluciones personalizadas</li>
+                                <li class="li-modal">Integración con sistemas de terceros (API)</li>
+                                <li class="li-modal">Soporte técnico durante 1 año</li>
+                                <li class="li-modal">Funcionalidad completa de comercio electrónico</li>
+                        </ul>
+                        <br>
+                        <p class="p-modal">para adquirir este plan escribenos</p>
+                        <a href="https://wa.me/573147505691" class="enlace-modal" target="_blank">aqui</a>
+                    </div>
+                </div>
+                <!--aca acaba mi venatana modal-->
             </div>
         </div>
+
         <!--equipo-->
         <div id="equipo">
             <h2 class="h2--equipo">Conoce nuestro equipo</h2>
