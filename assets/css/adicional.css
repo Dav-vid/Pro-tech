@@ -1,0 +1,231 @@
+.servicios-individuales {
+    margin-top: 100px;
+    display: flex;
+    background-color: #0d0d0d;
+    /*height: 100vh;*/
+    border-bottom: 10px solid #1e1e1e;
+    box-sizing: border-box;
+}
+
+.SI {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.pedidos {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.h5 {
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #00ff8544;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-SI {
+    width: 500px;
+    margin: 15px;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #e0e0e0;
+    font-weight: bold;
+}
+
+.label-servicios {
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+    color: #00ff8544;
+    background-color: transparent;
+    padding: 15px;
+    margin-top: 20px;
+    width: 500px;
+    border-radius: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.option {
+    color: #e0e0e0;
+    background-color: #0d0d0d;
+    border: none;
+}
+
+#texarea {
+    margin-top: 20px;
+    width: 30vw;
+    height: 24vh;
+    border-radius: 15px 0 0 15px;
+    background-color: transparent;
+    color: #e0e0e0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    resize: none;
+    padding: 30px;
+}
+
+#texarea::placeholder {
+    color: #e0e0e099;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.h55 {
+    margin-left: 215px;
+}
+
+.proyectos-individuales {
+    display: flex;
+    flex-direction: column;
+}
+
+.listaDeProyectos {
+    margin-left: 200px;
+    margin-top: 60px;
+    width: 35vw;
+    height: 70vh;
+    background-color: #1e1e1e;
+    border-radius: 20px 0 0 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div.producto {
+    background-color: #0d0d0d;
+    color: #E0E0E0;
+    padding: 50px;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px 0 0 20px;
+    border: solid 2px #00cc44aa;
+    box-shadow: 0 0 10px 0 #0d0d0d;
+    margin: auto;
+    margin-top: 25px;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+
+div.producto::-webkit-scrollbar {
+    display: none;
+}
+
+h6.DG {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #E0E0E0;
+    font-size: 2rem;
+    text-align: start;
+    margin-bottom: 15px;
+}
+
+p.PDG {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+}
+
+p.PDGC {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+    font-weight: bold;
+    margin-top: 15px;
+
+}
+
+.newinput {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    padding: 20px 50px;
+    background-color: transparent;
+    border: solid 1px #00cc44;
+    color: #00cc44;
+    border-radius: 15px;
+}
+.selecgenero{
+    display: flex;
+    flex-direction: column;
+    color: #00ff8544;
+    background-color: transparent;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 15px;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px 40px;
+}
+.optiones{
+    color: #e0e0e0;
+    background-color: #0d0d0d;
+    border: none;
+}
+.newinput:hover {
+    background-color: #00cc44;
+    color: #0d0d0d;
+    cursor: pointer;
+    border: solid 1px #1e1e1e
+}
+
+@media (max-width: 1000px) {
+    .servicios-individuales {
+        flex-direction: column;
+    }
+
+    .listaDeProyectos {
+        margin: auto;
+        margin: 15px;
+        width: 70vw;
+        height: 70vh;
+    }
+    div.producto{
+        height: 30vh;
+        width: 30vw;
+    }
+    .select{
+        width: 65vw;
+    }
+    .option{
+        font-size: 16px;
+    }
+    .p-SI{
+        width: 250px;
+        font-size: 16px;
+        text-align: start;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-left: 0;
+    }
+    .h5{
+        margin: 0;
+        font-size: 3rem;
+        text-align: start;
+    }
+    .h55{
+        margin: 0;
+    }
+    #texarea{
+        width: 50vw;
+        height: 24vh;
+    }
+    .newinput{
+        text-align: center;
+        font-size: 20px;
+        padding: 2vh 20vw;
+    }
+    .proyectos-individuales{
+        margin: auto;
+    }
+    .pedidos{
+        margin: 0;
+    }
+}

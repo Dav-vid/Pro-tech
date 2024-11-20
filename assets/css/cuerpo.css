@@ -84,6 +84,7 @@ h2{
     font-size: 3rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #E0E0E0;
+    text-align: center;
 }
 h3{
     font-size: 2rem;
@@ -163,6 +164,11 @@ h3{
     flex-direction: column;
     align-items: flex-end;
 }
+#formulariocomentario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 .p--reseñas{
     color: #00CC44;
     font-size: 3rem;
@@ -181,16 +187,16 @@ h3{
     color: #E0E0E0;
     font-size: 20px;
     border: solid 1px #E0E0E0;
-    width: 50vw;
+    width: 30vw;
 }
 .texto--input{
-    width: 50vw;
+    width: 30vw;
     height: 100px;
     margin-bottom: 50px;
+    resize: none;
 }
 .text--submit{
-    text-align: center;
-    width: 65vw;
+    width: 30vw;
     margin-bottom: 50px;
     background-color: #00CC44;
     color: #0d0d0d;
@@ -243,7 +249,7 @@ h3{
     box-sizing: border-box;
 }
 .submit-servicios{
-    margin: 15px 140px;
+    margin: 15px 145px;
     width: 25vw;
     height: 8vh;
     box-sizing: border-box;
@@ -287,18 +293,23 @@ h3{
 /*lo dificill*/
 @media (max-width: 800px){
     *{
-       font-size: 12px;
+       font-size: 10px;
+       overflow-x: hidden;
+       outline: 1px solid red;
     }
     .img{
         display: none;
-
     }
     .servicios-ofrecidos{
         margin-right: 0;
         margin: 1px 1px 10px 1px;
         padding: 10px 15px;
-        width: 90vw;
-        height: 60vh;
+        width: 60vw;
+        height: 55vh;
+    }
+    .servicios__text{
+        font-size: 20px;
+        margin: 20px 70px 20px 70px;
     }
     .text--servicios{
         margin: 20px;
@@ -310,15 +321,49 @@ h3{
     }
     .first-p{
         text-align: center;
+        margin: 15px;
     }
     .planes{
-        width: 85vw;
-        height: 60vh;
+        width: 60vw;
+        height: 50vh;
     }
     .banner{
         height: 80px;
     }
     .h2--equipo{
         text-align: center;
+        font-size: 2em;
+    }
+    .h3__servicios{
+        font-size: 2rem;
+        margin: 30px;
+    }
+    .formulario{
+        width: 80vw;
+        height: 95vh;
+    }
+    .registro{
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .label--registro{
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    .p-registro{
+        text-align: center;
+    }
+    .p--inicioSeccion{
+        text-align: center;
+    }
+    .inicio--seccion{
+        height: 65vh;
+    }
+    .submit-servicios{
+        margin: 20px;
+    }
+    .p--reseñas{
+        text-align: end;
     }
 }

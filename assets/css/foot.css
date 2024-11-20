@@ -27,12 +27,23 @@
 .a--help{
     color: #E0E0E0;
 }
+/*ventanas que supuestamente se llaman "ventanas modales"*/
 .contenedor-modal{
     box-shadow: 0 0 0 100vmax #0d0d0dbb;
     display: none;
 }
 .contenedor-modal.abrir{
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0d0d0dbb; 
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    z-index: 1000;
 }
 .div-modal{
     display: flex;
@@ -42,9 +53,10 @@
     padding: 50px;
     border-radius: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    box-shadow: 0 0 15px 0 #00cc44;
 }
 .p-modal{
-    text-align: center;
+    text-align: justify;
     margin: auto;
     width: 500px;
 }
@@ -68,6 +80,127 @@
     color: #00cc44;
     cursor: pointer;
 }
+.contenedor_modal{
+    display: none;
+}
+.contenedor_modal.abrirmodal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E0E0E0;
+    background-color: #1c1c1cee;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+.contenedor_div_modal{
+    width: 50vw;
+    height: 80vh;
+    padding: 65px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #0d0d0d;
+    border-radius: 20px;
+    text-align: justify;
+}
+.span_tc{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #E0E0E0;
+}
+.cerrar_terminosCondiciones{
+    position: fixed;
+    color: #00cc44;
+    width: 15px;
+    height: 15px;
+    right: 310px;
+    top: 30px;
+    cursor: pointer;
+}
+::-webkit-scrollbar{
+    width: 3px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #E0E0E0;
+    border-radius: 20px;
+    border: 1px solid #0d0d0d;
+}
+::-webkit-scrollbar-track{
+    background-color: #0d0d0d;
+}
+details{
+    padding: 50px;
+}
+summary{
+    color: #00cc4499;
+    list-style: none;
+    margin-bottom: 15px;
+}
+summary::before {
+    content: "+";
+    color: #00cc44;
+    font-size: 1.2em;
+    margin-right: 10px;
+  }
+.p_pf{
+    color: #E0E0E0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.coment{
+    padding: 50px;
+    background-color: #1c1c1c;
+    margin: auto;
+    width: 80%;
+    height: 50vh;
+    border-radius: 25px 0 0 25px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.coment-div{
+    background-color: #0d0d0d;
+    color: #E0E0E0;
+    padding: 40px;
+    border-radius: 20px;
+    border: solid 2px #00cc44aa;
+    box-shadow: 0 0 10px 0 #0d0d0d;
+}
+div.comentarioclass{
+    background-color: #0d0d0d;
+    color: #E0E0E0;
+    padding: 40px;
+    border-radius: 20px;
+    border: solid 2px #00cc44aa;
+    box-shadow: 0 0 10px 0 #0d0d0d;
+    margin-top: 25px;
+}
+#nombrecoment{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+p.nombre{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#mensajecoment .mensaje{
+    margin-top: 10px;
+}
+p.mensaje{
+    color: #E0E0E0;
+}
+.margin{
+    width: 100%;
+    background-color: #0d0d0d;
+    height: 20vh;
+}
+/*lo dificil aca tambien*/
 @media(max-width: 800px){
     .redes-sociales{
         margin: 8px;
@@ -76,4 +209,24 @@
         display: flex;
         flex-direction: column;
     }
+    .coment{
+        width: 300px;
+    }
+    .cerrar_terminosCondiciones{
+    top: 50px;
+    right: 60px;
+    }
+    .p-modal{
+        width: 280px;
+    }
+    .div-modal{
+        padding: 10px;
+        width: 350px;
+    }
+    .modalcerrar{
+        margin-top: 4px;
+        left: 170px;
+        top: 0px;
+    }
+
 }

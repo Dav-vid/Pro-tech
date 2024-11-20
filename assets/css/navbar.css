@@ -1,5 +1,6 @@
 @import "./cuerpo.css";
 @import "./foot.css";
+@import "./adicional.css";
 
 * {
     margin: 0;

@@ -16,7 +16,7 @@
             <div class="formulario">
                 <form id="formularioRegistro">
                     <p class="p--reseñas p-registro">Registro</p>
-                    <label for="nombre" class="label-comentarios"> Nombre</label>
+                    <label for="nombre" class="label-comentarios label--registro"> Nombre</label>
                     <input required type="text" id="nombre" class="input-comentarios registro">
                     <label for="apellido" class="label-comentarios label--registro"> apellido</label>
                     <input required type="text" id="apellido" class="input-comentarios registro">
@@ -25,7 +25,10 @@
                     <label for="contrasena" class="label-comentarios label--registro">Contraseña</label>
                     <input required type="password" id="contrasena" class="input-comentarios registro">
                     <label for="genero" class="label-comentarios label--registro">genero</label>
-                    <input required type="text" id="genero" class="input-comentarios registro">
+                    <select class="selecgenero" required type="text" id="genero" class="input-comentarios registro">
+                        <option class="optiones" value="masculino">Masculino</option>
+                        <option class="optiones" value="femenino">femenino</option>
+                    </select>
                     <input type="submit" id="enviar--formulario" class="button-adquirir submit-servicios">
                 </form>
             </div>
